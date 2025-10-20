@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Мови програмування - Огляд</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            padding: 20px;
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            background: white;
+            border-radius: 15px;
+            box-shadow: 0 20px 60px rgba(0,0,0,0.3);
+            overflow: hidden;
+        }
+        
+        header {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 40px;
+            text-align: center;
+        }
+        
+        header h1 {
+            font-size: 2.5em;
+            margin-bottom: 10px;
+        }
+        
+        header p {
+            font-size: 1.2em;
+            opacity: 0.9;
+        }
+        
+        .content {
+            padding: 40px;
+        }
+        
+        .language-card {
+            background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+            border-radius: 10px;
+            padding: 25px;
+            margin-bottom: 25px;
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+        
+        .language-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 25px rgba(0,0,0,0.15);
+        }
+        
+        .language-card h2 {
+            color: #667eea;
+            margin-bottom: 15px;
+            font-size: 1.8em;
+        }
+        
+        .language-card .tags {
+            margin: 15px 0;
+        }
+        
+        .tag {
+            display: inline-block;
+            background: #667eea;
+            color: white;
+            padding: 5px 12px;
+            border-radius: 20px;
+            font-size: 0.85em;
+            margin-right: 8px;
+            margin-bottom: 8px;
+        }
+        
+        .description {
+            color: #555;
+            margin-bottom: 10px;
+        }
+        
+        .uses {
+            color: #666;
+            font-style: italic;
+        }
+        
+        footer {
+            background: #2d3748;
+            color: white;
+            text-align: center;
+            padding: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>🖥️ Мови програмування</h1>
+            <p>Огляд популярних мов програмування</p>
+        </header>
+        
+        <div class="content">
+            <div class="language-card">
+                <h2>Python</h2>
+                <div class="tags">
+                    <span class="tag">Легка в навчанні</span>
+                    <span class="tag">Універсальна</span>
+                    <span class="tag">Популярна</span>
+                </div>
+                <p class="description">
+                    Python - це високорівнева мова програмування з простим синтаксисом. 
+                    Вона відмінно підходить для початківців завдяки читабельності коду.
+                </p>
+                <p class="uses">
+                    <strong>Використання:</strong> веб-розробка, аналіз даних, машинне навчання, автоматизація, наукові обчислення
+                </p>
+            </div>
+            
+            <div class="language-card">
+                <h2>JavaScript</h2>
+                <div class="tags">
+                    <span class="tag">Веб-розробка</span>
+                    <span class="tag">Фронтенд</span>
+                    <span class="tag">Бекенд</span>
+                </div>
+                <p class="description">
+                    JavaScript - основна мова для створення інтерактивних веб-сайтів. 
+                    Працює в браузері і на сервері (Node.js).
+                </p>
+                <p class="uses">
+                    <strong>Використання:</strong> веб-додатки, мобільні додатки, ігри, серверна розробка
+                </p>
+            </div>
+            
+            <div class="language-card">
+                <h2>Java</h2>
+                <div class="tags">
+                    <span class="tag">Корпоративна</span>
+                    <span class="tag">Кросплатформна</span>
+                    <span class="tag">ООП</span>
+                </div>
+                <p class="description">
+                    Java - об'єктно-орієнтована мова, яка працює на принципі "напиши один раз - запускай скрізь". 
+                    Широко використовується у великих компаніях.
+                </p>
+                <p class="uses">
+                    <strong>Використання:</strong> корпоративні системи, Android-додатки, банківське ПЗ, серверні додатки
+                </p>
+            </div>
+            
+            <div class="language-card">
+                <h2>C++</h2>
+                <div class="tags">
+                    <span class="tag">Продуктивність</span>
+                    <span class="tag">Системна</span>
+                    <span class="tag">Складна</span>
+                </div>
+                <p class="description">
+                    C++ - потужна мова для розробки високопродуктивних систем. 
+                    Дає повний контроль над апаратними ресурсами.
+                </p>
+                <p class="uses">
+                    <strong>Використання:</strong> ігрові движки, операційні системи, драйвери, високопродуктивні додатки
+                </p>
+            </div>
+            
+            <div class="language-card">
+                <h2>C#</h2>
+                <div class="tags">
+                    <span class="tag">Microsoft</span>
+                    <span class="tag">Сучасна</span>
+                    <span class="tag">Ігри</span>
+                </div>
+                <p class="description">
+                    C# - сучасна об'єктно-орієнтована мова від Microsoft. 
+                    Особливо популярна для розробки ігор на Unity.
+                </p>
+                <p class="uses">
+                    <strong>Використання:</strong> Windows-додатки, ігри (Unity), веб-додатки (ASP.NET), корпоративне ПЗ
+                </p>
+            </div>
+            
+            <div class="language-card">
+                <h2>PHP</h2>
+                <div class="tags">
+                    <span class="tag">Веб</span>
+                    <span class="tag">Серверна</span>
+                    <span class="tag">Проста</span>
+                </div>
+                <p class="description">
+                    PHP - серверна мова для веб-розробки. 
+                    Більшість популярних CMS (WordPress, Drupal) написані на PHP.
+                </p>
+                <p class="uses">
+                    <strong>Використання:</strong> динамічні веб-сайти, CMS, серверна логіка, веб-додатки
+                </p>
+            </div>
+        </div>
+        
+        <footer>
+            <p>&copy; 2025 Огляд мов програмування | Навчальний матеріал</p>
+        </footer>
+    </div>
+</body>
+</html>
